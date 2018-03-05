@@ -1,19 +1,19 @@
 # go-bindata-assetfs
 
-Serve embedded files from [jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata) with `net/http`.
+Serve embedded files from [mbict/go-bindata](https://github.com/mbict/go-bindata) with `net/http`.
 
-[GoDoc](http://godoc.org/github.com/elazarl/go-bindata-assetfs)
+[GoDoc](http://godoc.org/github.com/mbict/go-bindata-assetfs)
 
 ### Installation
 
 Install with
 
-    $ go get github.com/jteeuwen/go-bindata/...
-    $ go get github.com/elazarl/go-bindata-assetfs/...
+    $ go get github.com/mbict/go-bindata/...
+    $ go get github.com/mbict/go-bindata-assetfs/...
 
 ### Creating embedded data
 
-Usage is identical to [jteeuwen/go-bindata](https://github.com/jteeuwen/go-bindata) usage,
+Usage is identical to [mbict/go-bindata](https://github.com/mbict/go-bindata) usage,
 instead of running `go-bindata` run `go-bindata-assetfs`.
 
 The tool will create a `bindata_assetfs.go` file, which contains the embedded data.
@@ -37,7 +37,7 @@ You can always just run the `go-bindata` tool, and then
 
 use
 
-     import "github.com/elazarl/go-bindata-assetfs"
+     import "github.com/mbict/go-bindata-assetfs"
      ...
      http.Handle("/",
         http.FileServer(
